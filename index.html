@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>School Timetable</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📅 Timetable</h1>
+
+<div id="setup">
+<h2>Setup</h2>
+
+<label>Year Group</label>
+<select id="yearGroup">
+<option value="">Select</option>
+<option value="9-10">Year 9–10</option>
+<option value="11-13">Year 11–13</option>
+</select>
+
+<div id="setupForm"></div>
+
+<button id="saveBtn">Save</button>
+</div>
+
+<div id="viewer" class="hidden">
+
+<p id="datetime"></p>
+
+<h2>Current</h2>
+<p id="current"></p>
+
+<h2>Next</h2>
+<p id="next"></p>
+
+<h3>Day Progress</h3>
+<progress id="dayProgress" max="100"></progress>
+<p id="dayLeft"></p>
+
+<h3>Period Progress</h3>
+<progress id="periodProgress" max="100"></progress>
+<p id="periodLeft"></p>
+
+<button id="resetBtn">Reset</button>
+
+</div>
+
+</div>
+
+<script src="schedule.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
